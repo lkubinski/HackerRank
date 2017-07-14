@@ -11,11 +11,16 @@ public class Solution {
     static long aVeryBigSum(int n, long[] ar) {
         validateSize(n);
         validateArray(ar);
+        validateIndexLength(n, ar.length);
         long sum = 0L;
         for (int idx = 0; idx < n; idx++){
             sum += ar[idx];
         }
         return sum;
+    }
+
+    private static void validateIndexLength(int n, int arLength) {
+        if (n > arLength) throw new IllegalArgumentException();
     }
 
     public static void main(String[] args) {
