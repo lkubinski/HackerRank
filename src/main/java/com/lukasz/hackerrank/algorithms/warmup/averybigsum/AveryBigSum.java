@@ -1,12 +1,8 @@
 package com.lukasz.hackerrank.algorithms.warmup.averybigsum;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
-public class Solution {
+public class AveryBigSum {
 
     static long aVeryBigSum(int n, long[] ar) {
         validateSize(n);

@@ -1,13 +1,8 @@
 package com.lukasz.hackerrank.algorithms.warmup.comparethetriplets;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
-
-public class Solution {
+public class CompareTheTriplets {
 
     static int[] solve(int a0, int a1, int a2, int b0, int b1, int b2){
         int aliceResult = 0, bobResult = 0;

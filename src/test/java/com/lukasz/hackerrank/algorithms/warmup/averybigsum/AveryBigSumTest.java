@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Lukasz on 13/07/2017.
  */
-public class SolutionTest {
+public class AveryBigSumTest {
 
     @Test
     public void exampleTest(){
@@ -17,7 +17,7 @@ public class SolutionTest {
         long expectedSum = 5000000015L;
 
         //When
-        long sum = Solution.aVeryBigSum(N, numbers);
+        long sum = AveryBigSum.aVeryBigSum(N, numbers);
 
         //then
         assertEquals(expectedSum, sum);
@@ -31,7 +31,7 @@ public class SolutionTest {
         long expectedSum = 4294967294L;
 
         //When
-        long sum = Solution.aVeryBigSum(N, numbers);
+        long sum = AveryBigSum.aVeryBigSum(N, numbers);
 
         //then
         assertEquals(expectedSum, sum);
@@ -44,7 +44,7 @@ public class SolutionTest {
         long[] numbers = {0, 1};
 
         //When
-        long sum = Solution.aVeryBigSum(N, numbers);
+        long sum = AveryBigSum.aVeryBigSum(N, numbers);
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -54,7 +54,7 @@ public class SolutionTest {
         long[] numbers = {0, 1};
 
         //When
-        long sum = Solution.aVeryBigSum(N, numbers);
+        long sum = AveryBigSum.aVeryBigSum(N, numbers);
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -64,7 +64,7 @@ public class SolutionTest {
         long[] numbers = {0, (long)Math.pow(10,10) + 1L};
 
         //When
-        long sum = Solution.aVeryBigSum(N, numbers);
+        long sum = AveryBigSum.aVeryBigSum(N, numbers);
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -74,7 +74,7 @@ public class SolutionTest {
         long[] numbers = {-1, 1};
 
         //When
-        long sum = Solution.aVeryBigSum(N, numbers);
+        long sum = AveryBigSum.aVeryBigSum(N, numbers);
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -84,7 +84,7 @@ public class SolutionTest {
         long[] numbers = {-1, 1};
 
         //When
-        long sum = Solution.aVeryBigSum(N, numbers);
+        long sum = AveryBigSum.aVeryBigSum(N, numbers);
     }
 
 }

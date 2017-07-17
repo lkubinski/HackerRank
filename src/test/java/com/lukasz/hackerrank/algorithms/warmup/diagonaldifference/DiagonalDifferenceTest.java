@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Lukasz on 15/07/2017.
  */
-public class SolutionTest {
+public class DiagonalDifferenceTest {
 
     @Test
     public void exampleTest(){
@@ -19,7 +19,7 @@ public class SolutionTest {
         long expected = 15L;
 
         // Then
-        long diagonalDifference = Solution.calculateDiagonalDifference(dimension, matrix);
+        long diagonalDifference = DiagonalDifference.calculateDiagonalDifference(dimension, matrix);
         assertEquals(expected, diagonalDifference);
     }
 
@@ -33,7 +33,7 @@ public class SolutionTest {
         long expected = 5L;
 
         // Then
-        long diagonalDifference = Solution.calculateDiagonalDifference(dimension, matrix);
+        long diagonalDifference = DiagonalDifference.calculateDiagonalDifference(dimension, matrix);
         assertEquals(expected, diagonalDifference);
     }
 

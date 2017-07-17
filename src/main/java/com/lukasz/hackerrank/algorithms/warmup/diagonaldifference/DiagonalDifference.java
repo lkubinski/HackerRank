@@ -2,7 +2,7 @@ package com.lukasz.hackerrank.algorithms.warmup.diagonaldifference;
 
 import java.util.Scanner;
 
-public class Solution {
+public class DiagonalDifference {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

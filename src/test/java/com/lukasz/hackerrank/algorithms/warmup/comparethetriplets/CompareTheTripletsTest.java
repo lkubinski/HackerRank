@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Lukasz on 06/07/2017.
  */
-public class SolutionTest {
+public class CompareTheTripletsTest {
 
     @Test
     public void shouldReturnDraw() {
@@ -18,7 +18,7 @@ public class SolutionTest {
         int[] expected = {1,1};
 
         //when
-        int[] result = Solution.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
+        int[] result = CompareTheTriplets.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
 
         //then
         assertArrayEquals(expected, result);
@@ -33,7 +33,7 @@ public class SolutionTest {
         int[] expected = {3,0};
 
         //when
-        int[] result = Solution.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
+        int[] result = CompareTheTriplets.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
 
         //then
         assertArrayEquals(expected, result);
@@ -48,7 +48,7 @@ public class SolutionTest {
         int[] expected = {0,2};
 
         //when
-        int[] result = Solution.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
+        int[] result = CompareTheTriplets.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
 
         //then
         assertArrayEquals(expected, result);
@@ -63,7 +63,7 @@ public class SolutionTest {
         int[] expected = {0,0};
 
         //when
-        int[] result = Solution.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
+        int[] result = CompareTheTriplets.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
 
         //then
         assertArrayEquals(expected, result);
@@ -78,7 +78,7 @@ public class SolutionTest {
         int[] expected = {1,1};
 
         //when
-        int[] result = Solution.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
+        int[] result = CompareTheTriplets.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
     }
 
     @Test
@@ -90,7 +90,7 @@ public class SolutionTest {
         int[] expected = {0,0};
 
         //when
-        int[] result = Solution.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
+        int[] result = CompareTheTriplets.solve(alice[0], alice[1], alice[2], bob[0], bob[1], bob[2]);
 
         //then
         assertArrayEquals(expected, result);
