@@ -28,26 +28,15 @@ public class TimeConversion {
         Matcher m = pattern.matcher(timeToConvert);
         if (!m.find()) throw new IllegalArgumentException();
 
-        String newHour = "";
-
         String period = m.group("period");
         String hour = m.group("hour");
         String minsec = m.group("minsec");
 
-        if (hour.equals("12")){
-            if (period.equals("AM")){
-                newHour = "00";
-            } else {
-                newHour = "12";
-            }
+        if (period.equals("AM")){
+            return (hour.equals("12") ? "00" : hour ) + minsec ;
         } else {
-            if (period.equals("PM")){
-                newHour = String.format("%02d", Integer.valueOf(hour) + 12);
-            } else {
-                newHour = hour;
-            }
+            return (hour.equals("12") ? hour : Integer.valueOf(hour) + 12 ) + minsec ;
         }
-        return newHour + minsec;
     }
 
 }
